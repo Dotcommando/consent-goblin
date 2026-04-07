@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>Goblin Consent Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --surface: #f7f7fb;
+      --border: #d8dbe6;
+      --text: #1f2430;
+      --text-soft: #5d6678;
+      --accent: #7c3aed;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1117;
+        --surface: #171a23;
+        --border: #2b3140;
+        --text: #eef2ff;
+        --text-soft: #a9b2c7;
+        --accent: #9f67ff;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(760px, calc(100% - 32px));
+      margin: 32px auto 64px;
+    }
+
+    .card {
+      padding: 28px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: var(--surface);
+    }
+
+    h1,
+    h2 {
+      line-height: 1.2;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 30px;
+    }
+
+    h2 {
+      margin-top: 28px;
+      font-size: 18px;
+    }
+
+    p,
+    ul {
+      margin: 12px 0 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 12px;
+    }
+
+    .meta {
+      color: var(--text-soft);
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    a {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+<main>
+  <section class="card">
+    <div class="eyebrow">Goblin Consent</div>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated: April 7, 2026</p>
+
+    <p>
+      Goblin Consent is a Chrome extension for creating consent dialog mockups for screenshots, demos, design reviews, and visual mockups.
+    </p>
+
+    <h2>What data the extension handles</h2>
+    <p>
+      The extension stores the dialog content you create, such as:
+    </p>
+    <ul>
+      <li>site label text</li>
+      <li>dialog title text</li>
+      <li>dialog list items</li>
+      <li>button labels</li>
+      <li>selected presets and edited values</li>
+    </ul>
+
+    <h2>How data is stored</h2>
+    <p>
+      This data is stored locally in your browser using <code>chrome.storage.local</code>. It is used only to keep your current mock dialog state available between the editor panel and the on-page preview.
+    </p>
+
+    <h2>What the extension does not do</h2>
+    <ul>
+      <li>It does not send your dialog content to the developer.</li>
+      <li>It does not transmit your data to external servers.</li>
+      <li>It does not collect account credentials, payment details, or personal identifiers.</li>
+      <li>It does not track your browsing history beyond the active tab interaction needed to display the mock dialog on the page you choose.</li>
+      <li>It does not sell or share your data with third parties.</li>
+    </ul>
+
+    <h2>Permissions</h2>
+    <p>
+      Goblin Consent uses the following Chrome permissions:
+    </p>
+    <ul>
+      <li><code>activeTab</code> and <code>scripting</code> to insert the mock consent dialog into the current page after you explicitly click the extension.</li>
+      <li><code>sidePanel</code> to open the editor UI in Chrome’s side panel.</li>
+      <li><code>storage</code> to save your dialog configuration locally in the browser.</li>
+    </ul>
+
+    <h2>Data sharing</h2>
+    <p>
+      Goblin Consent does not share stored dialog data with the developer, service providers, advertisers, analytics platforms, or other third parties.
+    </p>
+
+    <h2>Data retention and control</h2>
+    <p>
+      Your saved dialog data remains in your local browser storage until you overwrite it, reset it, clear the extension’s storage, or remove the extension.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      For privacy-related questions, contact: <a href="mailto:webestet@gmail.com">webestet@gmail.com</a>
+    </p>
+  </section>
+</main>
+</body>
+</html>

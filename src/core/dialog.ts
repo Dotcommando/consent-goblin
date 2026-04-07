@@ -18,62 +18,62 @@ const DEFAULT_DIALOG_STATE: IDialogState = {
   siteLabel: 'untrusted-app.example',
   title: 'This app wants permission to:',
   items: [
-    'Sell your soul to the devil',
-    'Claim the right of first night',
-    'Take custody of your firstborn',
-    'Access your private meme archives'
+    'Store your language preference',
+    'Remember your sign-in status',
+    'Show product updates in this workspace',
+    'Use analytics for a mock product demo'
   ],
-  secondaryActionLabel: 'Block',
-  primaryActionLabel: 'Allow'
+  secondaryActionLabel: 'Not now',
+  primaryActionLabel: 'Continue'
 };
 
 const DIALOG_PRESETS: IDialogPreset[] = [
   {
-    id: 'infernal-contract',
-    label: 'Infernal Contract',
+    id: 'product-onboarding',
+    label: 'Product Onboarding',
     state: {
-      siteLabel: 'portal-of-ruin.example',
+      siteLabel: 'workspace-demo.example',
       title: 'This app wants permission to:',
       items: [
-        'Sell your soul to the devil',
-        'Transfer your firstborn into eternal service',
-        'Read your thoughts during awkward silence',
-        'Bill your descendants for hidden fees'
+        'Save your preferences for future sessions',
+        'Show contextual onboarding tips',
+        'Measure feature adoption in this demo',
+        'Remember dismissed setup prompts'
       ],
-      secondaryActionLabel: 'Deny',
-      primaryActionLabel: 'Summon'
+      secondaryActionLabel: 'Skip',
+      primaryActionLabel: 'Continue'
     }
   },
   {
-    id: 'startup-terms',
-    label: 'Startup Terms',
+    id: 'beta-access',
+    label: 'Beta Access',
     state: {
-      siteLabel: 'hypergrowth-ai.example',
+      siteLabel: 'labs-preview.example',
       title: 'This app wants permission to:',
       items: [
-        'Monetize your free time',
-        'Rebrand your personality for enterprise clients',
-        'Harvest your best ideas during sleep',
-        'Convert your family into monthly recurring revenue'
+        'Enable beta workspace features',
+        'Collect anonymous usability feedback',
+        'Store temporary session preferences',
+        'Show feature announcements in-product'
       ],
-      secondaryActionLabel: 'Not now',
-      primaryActionLabel: 'Scale me'
+      secondaryActionLabel: 'Later',
+      primaryActionLabel: 'Enable beta'
     }
   },
   {
-    id: 'royal-decree',
-    label: 'Royal Decree',
+    id: 'admin-workflow',
+    label: 'Admin Workflow',
     state: {
-      siteLabel: 'crown-authority.example',
-      title: 'The Crown requests permission to:',
+      siteLabel: 'admin-console.example',
+      title: 'This admin tool wants permission to:',
       items: [
-        'Exercise the right of first night',
-        'Seize your finest livestock',
-        'Confiscate your dignity on public holidays',
-        'Replace your surname with a tax number'
+        'Access organization settings',
+        'Store audit view preferences',
+        'Display workflow reminders in context',
+        'Save approval state in this mockup'
       ],
-      secondaryActionLabel: 'Resist',
-      primaryActionLabel: 'Obey'
+      secondaryActionLabel: 'Cancel',
+      primaryActionLabel: 'Proceed'
     }
   }
 ];
