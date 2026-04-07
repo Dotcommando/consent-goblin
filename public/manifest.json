@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Goblin Consent",
+  "version": "1.0.0",
+  "description": "Create fake browser-style consent dialogs for screenshots, mockups, and demos.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "sidePanel",
+    "storage"
+  ],
+  "action": {
+    "default_title": "Goblin Consent",
+    "default_popup": "menu.html"
+  },
+  "side_panel": {
+    "default_path": "editor.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "consent.html",
+        "consent.js",
+        "ui.css"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "consent-goblin-extension",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Chrome extension with fake joke permissions popup",
+  "author": "Mikhail Filchushkin <webestet@gmail.com>",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:watch": "node scripts/build.mjs --watch",
+    "clean": "node -e \"require('fs').rmSync('dist', { recursive: true, force: true })\""
+  },
+  "devDependencies": {
+    "@types/chrome": "0.0.327",
+    "esbuild": "0.25.12",
+    "typescript": "5.9.3"
+  }
+}

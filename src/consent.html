@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>Goblin Consent Preview</title>
+  <link rel="stylesheet" href="./ui.css" />
+</head>
+<body class="page page-consent">
+<main class="consent-stage">
+  <section class="consent-card" aria-label="Fake consent dialog preview">
+    <header class="consent-card__header">
+      <div class="site-chip">
+        <span class="site-chip__dot"></span>
+        <span id="siteLabel"></span>
+      </div>
+    </header>
+
+    <div class="consent-card__body">
+      <h1 id="dialogTitle" class="consent-card__title"></h1>
+      <ul id="dialogItems" class="consent-list"></ul>
+    </div>
+
+    <footer class="consent-card__footer">
+      <button id="secondaryActionButton" class="button button-secondary" type="button"></button>
+      <button id="primaryActionButton" class="button button-primary" type="button"></button>
+    </footer>
+  </section>
+</main>
+
+<script src="./consent.js"></script>
+</body>
+</html>
